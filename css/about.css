@@ -1,0 +1,113 @@
+.headerabout_hr {
+  width: 50px;
+  height: 4px;
+  background-color: #f67e7e;
+  border: none;
+}
+.head_about {
+  padding: 0px 0px 120px 0px;
+}
+header_about {
+  background: url("../img/abouttepa.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-color: #014e56;
+}
+.main_about {
+  background: url("../img/about_main_tepa.svg"), url(../img/about_mian_pas.svg);
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+  background-color: #012f34;
+  padding: 140px 0px;
+}
+.meet_title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 48px;
+  text-align: center;
+  color: white;
+}
+.team_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 60px;
+  padding-top: 82px;
+}
+
+.team_card {
+  background-color: #002529;
+  text-align: center;
+  padding: 40px 30px;
+  border-radius: 8px;
+  color: white;
+  position: relative;
+}
+
+.team_card h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.team_card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.plus_btn {
+  background-color: #f67e7e;
+  color: #012f34;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+  left: 45%;
+  text-align: center;
+  cursor: pointer;
+}
+.plus_btn:hover {
+  background-color: #79c8c7;
+}
+
+.quote_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  text-align: left;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.social_icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.social_icons img {
+  width: 20px;
+  height: 20px;
+}
+.main_about2 {
+  background: url("../img/about2.svg");
+  background-color: #002529;
+  background-repeat: no-repeat;
+  padding: 140px 0px;
+}
+.main2_title h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: white;
+}
+.thewerge img{
+  padding-top: 64px;
+}
