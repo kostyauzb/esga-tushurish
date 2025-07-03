@@ -68,3 +68,66 @@
 .submit-btn:hover {
   background-color: #c8e6e3;
 }
+
+@media (max-width: 1020px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact_ch h1 {
+    text-align: center;
+    font-size: 64px;
+  }
+  .contact_ch h3 {
+    text-align: center;
+  }
+}
+@media (max-width: 650px) {
+  .form_group input {
+    width: 450px;
+  }
+  .contact_ch h1 {
+    text-align: center;
+    font-size: 64px;
+  }
+  .contact_ch h3 {
+    text-align: center;
+  }
+   .main_contact{
+  padding: 110px 0px;
+ }
+ .contact_ong{
+  padding-top: 64px;
+ }
+}
+@media (max-width: 500px) {
+  .form_group input {
+    width: 360px;
+  }
+  .contact_ch h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .contact_ch h3 {
+    text-align: center;
+  }
+  .contact_card p {
+    font-size: 18px;
+  }
+  .iconcs_left {
+    display: flex;
+    margin-top: 40px;
+  }
+ .main_contact{
+  padding: 80px 0px;
+ }
+  .footer-section_right {
+    display: block;
+    margin-top: -50px;
+    gap: 20px;
+  }
+   .contact_ong{
+  padding-top: 56px;
+ }
+
+}

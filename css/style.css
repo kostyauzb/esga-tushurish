@@ -28,10 +28,6 @@ body {
   flex-direction: column;
   height: 100%;
 }
-ul,
-ol {
-  list-style: none;
-}
 h1,
 h2,
 h3,
@@ -66,13 +62,6 @@ header {
   background-repeat: no-repeat;
   background-color: #014e56;
   background-position: left center;
-  /* display: flex;
-  flex-direction: row-reverse; */
-}
-.img_chap {
-  position: absolute;
-  left: 0;
-  bottom: 38%;
 }
 nav {
   display: flex;
@@ -120,7 +109,6 @@ a {
 .hero_titles {
   display: flex;
   justify-content: space-between;
- 
 }
 .hero_tit1 {
   max-width: 620px;
@@ -128,7 +116,8 @@ a {
 }
 
 .hero_tit2 {
-  width: 445px;
+  width: 100%;
+  max-width: 450px;
   margin-top: 129px;
 }
 .hero_tit2 h3 {
@@ -346,24 +335,38 @@ a {
 .footer-section p {
   opacity: 0.6;
   font-weight: 600;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 16px;
   max-width: 300px;
+  color: white;
+  
 }
 .iconcs {
   display: flex;
   gap: 16px;
 }
 .iconcs img:hover {
-  background-color: #f67e7e;
   cursor: pointer;
 }
 .footer_icons p {
+  color: white;
   opacity: 60%;
   padding-top: 50px;
   font-weight: 600;
   font-size: 15px;
 }
+.iconcs_left {
+  display: none;
+  gap: 20px;
+}
+.icons_right {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+.footer-section_right {
+  display: none;
+}
+
 /* Responsive */
 @media screen and (max-width: 850px) {
   .main1 {
@@ -391,7 +394,7 @@ a {
     font-size: 64px;
     width: 100%;
     max-width: 340px;
-    margin: 0px auto;
+    margin: auto;
     line-height: 56px;
   }
   .header_hr {
@@ -402,7 +405,6 @@ a {
     background-color: #014e56;
   }
   .hero_tit2 {
-    margin-top: 0px;
     text-align: center;
     width: 100%;
     max-width: 457px;
@@ -410,7 +412,7 @@ a {
   }
   .hero_tit2 h3 {
     margin-top: 0px;
-    font-size: 15px;
+    font-size: 16px;
   }
   .talent {
     font-size: 64px;
@@ -428,6 +430,33 @@ a {
   .main_companies span {
     font-size: 32px;
   }
+  .footer1 {
+    padding: 76px 0px;
+  }
+  .footer1_title h1 {
+    font-size: 32px;
+  }
+  .footer-section {
+    display: none;
+  }
+  .footer-section_right p {
+    padding: 0px;
+  }
+  .footer11 {
+    gap: 40px;
+  }
+  .footer-section_right {
+    display: block;
+  }
+  .icons_right {
+    margin-top: 20px;
+  }
+  .footer_icons p {
+    text-align: end;
+  }
+  .footer_icons {
+    justify-items: center;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -440,6 +469,7 @@ a {
   .hamburger-btn {
     display: block;
   }
+
   .hero_titls {
     font-size: 40px;
     line-height: 5px;
@@ -447,10 +477,53 @@ a {
     max-width: 230px;
     width: 100%;
   }
+  .hero_tit2 h3 {
+  }
   .talent {
     font-size: 40px;
   }
   nav {
     margin-top: 48px;
+  }
+  .main_ch {
+    margin-right: auto;
+  }
+  .main_ch h1 {
+    width: 100%;
+    max-width: 240px;
+    font-size: 32px;
+  }
+  .footer_my_tit {
+    justify-items: center;
+  }
+  .icons_right {
+    margin-top: 40px;
+  }
+   .footer_icons p {
+    text-align: center;
+  }
+    .footer_icons {
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 560px) {
+  .footer1_title {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer_my {
+    justify-items: center;
+  }
+
+  .footer11 {
+    justify-items: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .footer_icons p {
+    padding-top: 16px;
   }
 }
