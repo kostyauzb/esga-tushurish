@@ -338,7 +338,6 @@ a {
   font-size: 16px;
   max-width: 300px;
   color: white;
-  
 }
 .iconcs {
   display: flex;
@@ -499,10 +498,10 @@ a {
   .icons_right {
     margin-top: 40px;
   }
-   .footer_icons p {
+  .footer_icons p {
     text-align: center;
   }
-    .footer_icons {
+  .footer_icons {
     justify-items: center;
   }
 }

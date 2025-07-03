@@ -142,6 +142,7 @@ header_about {
   gap: 78px;
   padding-top: 64px;
 }
+/* Responsive */
 @media screen and (max-width: 768px) {
   .headerabout_hr {
     display: none;
