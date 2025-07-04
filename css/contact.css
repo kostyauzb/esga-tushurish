@@ -35,6 +35,10 @@
   display: flex;
   justify-content: space-between;
 }
+.form_group {
+  margin-bottom: 24px;
+}
+
 .form_group input {
   border: none;
   outline: none;
@@ -62,6 +66,10 @@
   font-size: 1.1em;
   font-weight: bold;
   margin-top: 24px;
+}
+.iconcs img:hover {
+  filter: brightness(0) saturate(100%) invert(53%) sepia(43%) saturate(586%)
+    hue-rotate(314deg) brightness(100%) contrast(96%);
 }
 
 .submit-btn:hover {

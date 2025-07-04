@@ -291,7 +291,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 153px;
   height: 48px;
   border-radius: 24px;
@@ -367,8 +366,9 @@ a {
   gap: 20px;
   cursor: pointer;
 }
-.icons_right:hover {
-  fill: #f67e7e;
+.icons_right img:hover {
+  filter: brightness(0) saturate(100%) invert(53%) sepia(43%) saturate(586%)
+    hue-rotate(314deg) brightness(100%) contrast(96%);
 }
 .footer-section_right {
   display: none;
@@ -484,8 +484,7 @@ a {
     max-width: 230px;
     width: 100%;
   }
-  .hero_tit2 h3 {
-  }
+
   .talent {
     font-size: 40px;
   }

@@ -144,6 +144,10 @@ header_about {
   gap: 78px;
   padding-top: 64px;
 }
+.iconcs img:hover {
+  filter: brightness(0) saturate(100%) invert(53%) sepia(43%) saturate(586%)
+    hue-rotate(314deg) brightness(100%) contrast(96%);
+}
 /* Responsive */
 @media screen and (max-width: 768px) {
   .headerabout_hr {
