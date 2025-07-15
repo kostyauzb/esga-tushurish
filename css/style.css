@@ -110,6 +110,65 @@ a {
   background-color: white;
   color: #014e56;
 }
+/* ////////////////////////////// hamberger */
+.overlay {
+  background: url("../img/hamburger_imgdjfn.svg") bottom right;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60vw;
+  max-width: 360px;
+  height: 100vh;
+  background-color: #2c6269;
+  transform: translateX(100%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlay.open {
+  transform: translateX(0);
+}
+
+.close-btn {
+  align-self: flex-end;
+  margin: 56px 25px;
+  background: none;
+  border: none;
+  font-size: 36px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.overlay-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: start;
+}
+.overlay-nav a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.overlay-nav a:hover {
+  color: #f67e7e;
+}
+.btn-contact_ham {
+  font-size: 18px;
+  padding: 10px 32px;
+  border: 2px solid #fff;
+  border-radius: 24px;
+  background: transparent;
+  color: #fff;
+}
+.btn-contact_ham:hover {
+  background: #fff;
+  color: #2f6666;
+}
+
 .hero_titles {
   display: flex;
   justify-content: space-between;
@@ -177,6 +236,8 @@ a {
   background-color: #f67e7e;
 }
 .main_ch h1 {
+  width: 100%;
+  max-width: 500px;
   font-weight: 700;
   font-size: 48px;
   color: white;
@@ -295,9 +356,8 @@ a {
   height: 48px;
   border-radius: 24px;
   border: 2px solid #012f34;
-  /* background-color: #014e5; */
   cursor: pointer;
-  color: white;
+  color: #012f34;
   font-weight: 600;
   font-size: 18px;
   /* text-align: center; */
@@ -359,6 +419,7 @@ a {
 }
 .iconcs_left {
   display: none;
+  /* display: flex; */
   gap: 20px;
 }
 .icons_right {
@@ -394,8 +455,25 @@ a {
     flex-direction: column;
   }
   .hero_tit1 {
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
+  }
+  .main1 {
+    padding: 0px;
+  }
+  .main_card1 {
+  }
+  .main2 {
+    padding: 100px 0px;
+  }
+  .iconcs_left {
+    display: block;
+    margin-top: 20px;
+    display: flex;
+    gap: 16px;
+  }
+  .icons_right {
+    display: none;
   }
   .hero_titls {
     font-size: 64px;
@@ -424,18 +502,26 @@ a {
   .talent {
     font-size: 64px;
   }
+  .main_div {
+    margin: 100px 0px;
+  }
   .head {
     background-position: center bottom;
   }
   .main_cards {
     flex-direction: column;
     align-items: center;
+    gap: 48px;
   }
   .main_companies h1 {
     font-size: 32px;
+    text-align: center;
   }
   .main_companies span {
     font-size: 32px;
+  }
+  nav {
+    margin-top: 64px;
   }
   .footer1 {
     padding: 76px 0px;
@@ -522,14 +608,39 @@ a {
   .footer_my {
     justify-items: center;
   }
+  .hero_tit1 {
+    margin: 0px;
+  }
 
   .footer11 {
     justify-items: center;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    gap: 0px;
   }
   .footer_icons p {
     padding-top: 16px;
+  }
+  header {
+    height: 600px;
+  }
+  .main_div {
+    margin: 64px 0px;
+  }
+  .expreciend {
+    flex-direction: column;
+    text-align: center;
+    opacity: 70%;
+  }
+  .main2 {
+    padding: 140px 0px;
+  }
+  .footer2 {
+    padding: 64px 0px;
+  }
+  .footer-section_right p {
+    margin-top: 26px;
+    margin-bottom: 36px;
   }
 }

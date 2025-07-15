@@ -86,8 +86,10 @@
     font-size: 64px;
   }
   .form_container {
-    /* border: 1px solid red; */
     margin-top: 50px;
+  }
+  .main_contact {
+    padding: 110px 0px;
   }
   .contact_ch h3 {
     text-align: center;

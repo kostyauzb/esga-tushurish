@@ -12,19 +12,29 @@
     <div class="header_contact">
       <div class="container">
         <nav>
-          <a href="../index.html">
-            <img class="logo" src="../img/myteam 2.svg" alt="site logo" />
-          </a>
-
+          <img class="logo" src="../img/myteam 2.svg" alt="site logo" />
           <div class="site_title">
             <a href="/index.html">home</a>
             <a href="/pages/About.html">about</a>
           </div>
+
           <a class="btn-contact" href="/pages/Contact.html">contact us</a>
 
-          <button class="hamburger-btn">
-            <img src="../img/hamburger.svg" alt="" />
+          <button class="hamburger-btn" id="openMenu">
+            <img src="../img/hamburger.svg" alt="Menu" />
           </button>
+
+          <div class="overlay" id="navOverlay">
+            <button class="close-btn" id="closeMenu">&times;</button>
+            <div class="overlay-nav">
+              <a href="/index.html">home</a>
+              <a href="/pages/About.html">about</a>
+              <a class="btn-contact_ham" href="/pages/Contact.html"
+                >contact us</a
+              >
+            </div>
+            <div class="overlay-decor"></div>
+          </div>
         </nav>
       </div>
     </div>
@@ -100,8 +110,14 @@
                 <a href="/index.html">home</a>
                 <a href="/pages/About.html">about</a>
               </div>
+              <div class="iconcs_left">
+                <a href="https://instagram.com/qosimjon_1"
+                  ><img src="../img/facebook.svg" alt="facebook" />
+                </a>
+                <a href=""><img src="../img/pppppppppp.svg" alt="" /></a>
+                <a href=""><img src="../img/twitter.svg" alt="" /></a>
+              </div>
             </div>
-
             <div class="footer-section">
               <p>
                 987 Hillcrest Lane<br />
@@ -113,7 +129,15 @@
           </div>
 
           <div class="footer_icons">
-            <div class="iconcs">
+            <div class="footer-section_right">
+              <p>
+                987 Hillcrest Lane<br />
+                Irvine, CA<br />
+                California 92714<br />
+                Call Us : 949-833-7432
+              </p>
+            </div>
+            <div class="icons_right">
               <a href="https://instagram.com/qosimjon_1"
                 ><img src="../img/facebook.svg" alt="facebook" />
               </a>
@@ -125,5 +149,6 @@
         </div>
       </div>
     </div>
+    <script src="../script/main.js"></script>
   </body>
 </html>

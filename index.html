@@ -21,9 +21,21 @@
 
             <a class="btn-contact" href="/pages/Contact.html">contact us</a>
 
-            <button class="hamburger-btn">
-              <img src="./img/hamburger.svg" alt="" />
+            <button class="hamburger-btn" id="openMenu">
+              <img src="./img/hamburger.svg" alt="Menu" />
             </button>
+
+            <div class="overlay" id="navOverlay">
+              <button class="close-btn" id="closeMenu">&times;</button>
+              <div class="overlay-nav">
+                <a href="/index.html">home</a>
+                <a href="/pages/About.html">about</a>
+                <a class="btn-contact_ham" href="/pages/Contact.html"
+                  >contact us</a
+                >
+              </div>
+              <div class="overlay-decor"></div>
+            </div>
           </nav>
           <!------------------------------------- hero-->
           <div class="hero">
@@ -99,7 +111,7 @@
           </div>
         </div>
       </div>
-
+      <!-- ////////////////////////////////// -->
       <div class="main2">
         <div class="container">
           <div class="main_companies">
@@ -125,24 +137,24 @@
             <div class="main_card1">
               <img src="./img/''''''.svg" alt="" />
               <h3 class="card1_title">
-                “The team perfectly fit the specialized skill set required. They
-                focused on the most essential features helping us launch the
-                platform eight months faster than planned.”
+                “We needed to automate our entire onboarding process. The team
+                came in and built out the whole journey. Since going live, user
+                retention has gone through the roof!”
               </h3>
-              <h1>Kady Baker</h1>
-              <h4>Product Manager at Bookmark</h4>
+              <h1>Aiysha Reese</h1>
+              <h4>Founder of Manage</h4>
               <img class="card1img" src="./img/card2.svg" alt="" />
             </div>
 
             <div class="main_card1">
               <img src="./img/''''''.svg" alt="" />
               <h3 class="card1_title">
-                “The team perfectly fit the specialized skill set required. They
-                focused on the most essential features helping us launch the
-                platform eight months faster than planned.”
+                “Amazing. Our team helped us build an app that delivered a new
+                experience for hiring a physio. The launch was an instant
+                success with 100k downloads in the first month.”
               </h3>
-              <h1>Kady Baker</h1>
-              <h4>Product Manager at Bookmark</h4>
+              <h1>Arthur Clarke</h1>
+              <h4>Co-founder of MyPhysio</h4>
               <img class="card1img" src="./img/card3.svg" alt="" />
             </div>
           </div>
@@ -160,7 +172,7 @@
           </div>
         </div>
       </div>
-
+      <!-- /////////////////////////////// -->
       <div class="footer2">
         <div class="container">
           <div class="footer11">
@@ -175,7 +187,6 @@
                   <a href="/index.html">home</a>
                   <a href="/pages/About.html">about</a>
                 </div>
-
                 <div class="iconcs_left">
                   <a href="https://instagram.com/qosimjon_1"
                     ><img src="./img/facebook.svg" alt="facebook" />
@@ -216,5 +227,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./script/main.js"></script>
   </body>
 </html>

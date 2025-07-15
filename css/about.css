@@ -43,7 +43,7 @@ header_about {
   background: url("../img/about_main_tepa.svg"), url(../img/about_mian_pas.svg);
   background-position: top left, bottom right;
   background-repeat: no-repeat;
-  background-color: #012f34;
+  background-color: #004047;
   padding: 140px 0px;
 }
 .meet_title h1 {
@@ -55,76 +55,110 @@ header_about {
 }
 .team_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 30px;
-  padding: 60px;
-  padding-top: 82px;
+  margin-top: 64px;
 }
 
 .team_card {
-  background-color: #002529;
-  text-align: center;
-  padding: 40px 30px;
-  border-radius: 8px;
-  color: white;
   position: relative;
+  background-color: #012f34;
+  text-align: center;
+  padding: 32px 24px;
+  color: white;
+  overflow: visible;
+  margin-top: 48px;
 }
-
 .team_card h3 {
   font-weight: 700;
-  margin: 10px 5px;
   font-size: 18px;
   color: #79c8c7;
+  margin-top: 16px;
 }
-
 .team_card p {
   font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 28px;
 }
-
 .plus_btn {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 56px;
   background-color: #f67e7e;
   color: #012f34;
-  width: 40px;
-  height: 40px;
-  font-size: 24px;
+  font-size: 36px;
   border-radius: 50%;
-  position: absolute;
-  bottom: -20px;
-  left: 43%;
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
   cursor: pointer;
+  padding-bottom: 7px;
 }
 .plus_btn:hover {
   background-color: #79c8c7;
 }
-
-.quote_card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* padding: 30px; */
+.team_info {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #002529;
+  border-radius: 8px;
+  padding: 30px;
+  box-sizing: border-box;
   text-align: center;
+  color: white;
+  z-index: 10;
+}
+.team_info.active {
+  display: block;
 }
 
-.quote {
-  text-align: center;
+.team_info h3 {
+  font-weight: 700;
+  font-size: 18px;
+  color: #79c8c7;
+}
+.team_info p {
+  font-weight: 500;
   font-size: 16px;
-  margin-bottom: 20px;
-  font-weight: 600;
+  margin-top: 8px;
+  margin-bottom: 28px;
 }
-
 .social_icons {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 16px;
+  margin-top: 24px;
 }
 
-.social_icons img {
-  width: 20px;
-  height: 20px;
+.close_btn {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 56px;
+  background-color: #f67e7e;
+  color: #012f34;
+  font-size: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-bottom: 7px;
 }
+.close_btn:hover {
+  background-color: #79c8c7;
+}
+
 .main_about2 {
   background: url("../img/about2.svg");
   background-color: #002529;
@@ -180,11 +214,17 @@ header_about {
     justify-content: center;
     padding-top: 48px;
   }
+  .team_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin: 0px;
+  }
   .main_about {
     padding: 100px 0px;
   }
   .meet_title h1 {
-    font-size: 48px;
+    font-size: 32px;
   }
   .main_about2 {
     padding: 100px 0px;
@@ -200,17 +240,26 @@ header_about {
   .meet_title h1 {
     font-size: 32px;
   }
+
   .main_about {
     padding: 88px 0px;
   }
+  .thewerge {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero_titles_con {
+    padding-top: 80 px;
+  }
   .main2_title h1 {
-    font-size: 36px;
+    font-size: 32 px;
+  }
+  .iconcs {
+    margin-top: 40px;
   }
   .main_about2 {
     padding: 88px 0px;
-  }
-  .team_container {
-    padding: 48px 0px;
   }
   .footer1 {
     padding: 82px 0px;
