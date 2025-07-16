@@ -133,7 +133,7 @@
   }
   .footer-section_right {
     display: block;
-    margin-top: -50px;
+    /* margin-top: -50px; */
     gap: 20px;
   }
   .contact_ong {
